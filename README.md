@@ -30,7 +30,7 @@ The example is a jQuery chunk included at the bottom of our template.
 
 ##SNIPPET##
 
-**Use the snippet in this repo as a guide to setup your experiment scenario.**
+**Use the snippet in this repo as a guide to setup your experiment scenario. It should be called in the very bottom of your template.**
 
     [[!experiment-control]]
 
