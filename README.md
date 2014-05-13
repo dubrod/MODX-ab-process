@@ -12,7 +12,7 @@ MODX-ab-process
 
 - - -
 
-###Property Sets###
+##Property Sets##
 
 If your not familiar with [MODX Property Sets](http://rtfm.modx.com/revolution/2.x/making-sites-with-modx/customizing-content/properties-and-property-sets), you might want to start there just setting up your values.
 
@@ -20,7 +20,7 @@ If your not familiar with [MODX Property Sets](http://rtfm.modx.com/revolution/2
 
 - - -
 
-###Chunk###
+##Chunk##
 
 **Use the chunk in this repo as a guide to setup your template.**
 
@@ -53,7 +53,7 @@ Our tutorial uses the following element where we want our links to render:
 
     <div class="experiment-element"></div>
 
-**In your CSS set 
+In your CSS set:
 
 
     .experiment-element{display: none;}
