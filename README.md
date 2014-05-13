@@ -3,12 +3,7 @@ MODX-ab-process
 
 ##MODX Simple A/B Process##
 
-> This tutorial will outline a custom A/B scenario using Property Sets, some simple PHP, and jQuery HTML edits. Make sure you call the snippet from your template with the uncache syntax
-
-
-    [[!experiment-control]]
-
-
+> This tutorial will outline a custom A/B scenario using Property Sets, some simple PHP, and jQuery HTML edits. 
 
 - - -
 
@@ -36,6 +31,8 @@ The example is a jQuery chunk included at the bottom of our template.
 ##SNIPPET##
 
 **Use the snippet in this repo as a guide to setup your experiment scenario.**
+
+    [[!experiment-control]]
 
 Since we are doing a 50/50 experiment lets use a simple even/odd scenario. If the minute is even **do** else **do this**
 
