@@ -1,0 +1,11 @@
+<!-- START experiment [[+divClass]] -->
+[[!If? &subject=`[[+showCampaign]]` &operator=`=` &operand=`1` &then=`
+<script type="text/javascript">
+$(document).ready(function(){
+   $(".experiment-element").html("<a href=\"signup\" onclick=\"[[+onClick]]\" class=\"[[+btnClass]]\">[[+btnText]]</a>");
+   $(".experiment-element").show();
+   [[+pageviewScript]]
+});
+</script>
+`]]
+<!-- END experiment [[+divClass]] -->
