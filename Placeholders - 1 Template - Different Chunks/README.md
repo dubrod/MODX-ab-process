@@ -23,7 +23,9 @@ If you have additional chunks to switch like say a specific JS or CSS file name 
 
 **Setting the chunk placeholder in your template:**
 
-```[[$home_[[+campaign]]]]```
+```
+[[$home_[[+campaign]]]]
+```
 
 *campaign* is our placeholder we will set next
 
