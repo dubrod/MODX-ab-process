@@ -1,5 +1,5 @@
 <?php
-//define property set based on randomization
+//define placeholder based on odd or even minute
     $min = intval(date('i'));
 
     if ($min % 2 == 0) {
