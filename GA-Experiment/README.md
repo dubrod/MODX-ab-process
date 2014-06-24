@@ -1,5 +1,5 @@
 
-##A/B Process with Google Analytics "Experiments" and MODX
+##A/B Process with Google Analytics "Experiments" in MODX
 
 ###Step One: Pages
 
@@ -26,7 +26,7 @@ In your **head chunk** add a placeholder just after `<head>`
 Change your **head chunk call** to include the placeholder and the Experiment Code
 
 ```
-[[$head-front? &ga_exp_code=`
+[[$head? &ga_exp_code=`
 <script>
 _udn = "pertino.com";
 </script>
