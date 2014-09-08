@@ -8,12 +8,12 @@ $requestVar = $modx->getOption('requestVar', $scriptProperties, $modx->getOption
 if ( !isset($requestVar) || empty($requestVar) || isset($_GET[$requestVar]) ) return;
 // get the cookie name setting
 $cookieName = $modx->getOption('cookieName', $scriptProperties, $modx->getOption('split_test_cookie_name', null, '_per_exp'));
-// if the cookie is set to 'none', escape
-if ($_COOKIE[$cookieName] == 'none') return;
+$cookieEscString = $modx->getOption('cookieEscString', $scriptProperties, 'none');
+// if the cookie is set to $cookieEscString, escape
+if ($_COOKIE[$cookieName] == $cookieEscString) return;
 
 // build url
-$url = $_SERVER['REQUEST_URI'];
-$url .= empty($_SERVER['QUERY_STRING']) ? '?' : '&';
+$url = empty($_SERVER['QUERY_STRING']) ? $_SERVER['REQUEST_URI'] . '?' : $_SERVER['REQUEST_URI'] . $_SERVER['QUERY_STRING'] . '&';
 $url .= $requestVar;
 
 // if the cookie is set just go there
@@ -27,5 +27,5 @@ if (rand()&1) {
 
 } else {
 
-    setcookie($cookieName, 'none', time()+60*60*24*30);
+    setcookie($cookieName, $cookieEscString, time()+60*60*24*30);
 }
