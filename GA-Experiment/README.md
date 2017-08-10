@@ -1,13 +1,13 @@
 
-##A/B Process with Google Analytics "Experiments" in MODX
+## A/B Process with Google Analytics "Experiments" in MODX
 
-###Step One: Pages
+### Step One: Pages
 
 > Create your 2 Versions (pages) in MODX as Resources. They can share everything except a template.
 
 ---
 
-###Step Two: Experiment Code Placeholder.
+### Step Two: Experiment Code Placeholder.
 
 > Your &lt;head&gt; should already contain the typical GA code.
 
@@ -19,7 +19,7 @@ In your **head chunk** add a placeholder just after `<head>`
 
 ---
 
-###Step 2.5: Edit Template
+### Step 2.5: Edit Template
 
 > Open the Template for page "A"
 
@@ -40,7 +40,7 @@ _udn = "pertino.com";
 
 ---
 
-###Step 2.75: Setup Experiment in GA
+### Step 2.75: Setup Experiment in GA
 
 You'll have to do **Step 2.5** after you've done step 3 of the GA setup here: https://support.google.com/analytics/answer/1745152?hl=en&ref_topic=1745207
 
